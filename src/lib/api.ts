@@ -1,7 +1,7 @@
-// src/lib/api.ts
+
 
 export async function login(codigo: string) {
-    const res = await fetch('http://localhost:3333/login', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ codigo }),
@@ -13,12 +13,12 @@ export async function login(codigo: string) {
 }
 
 export async function listarTurnos() {
-    const res = await fetch('http://localhost:3333/turnos');
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/turnos`);
     return res.json();
 }
 
 export async function iniciarTurno(usuarioId: number) {
-    const res = await fetch('http://localhost:3333/turnos/inicio', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/turnos/inicio`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ usuarioId }),
@@ -27,7 +27,7 @@ export async function iniciarTurno(usuarioId: number) {
 }
 
 export async function finalizarTurno(turnoId: number) {
-    const res = await fetch(`http://localhost:3333/turnos/fim/${turnoId}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/turnos/fim/${turnoId}`, {
         method: 'PATCH',
     });
 
