@@ -15,6 +15,8 @@ export default function LoginPage() {
       localStorage.setItem('usuarioId', String(usuarioId));
       router.push('/dashboard');
     } catch (err) {
+      // Usando 'err' para depuração, por exemplo
+      console.error("Erro ao fazer login:", err); // <-- Adicione esta linha
       setErro('Código inválido ou erro no servidor');
     }
   }
