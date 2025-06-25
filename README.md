@@ -1,8 +1,8 @@
-# 🌐 Frontend - Sistema de Controle de Ponto
+Frontend - Sistema de Controle de Ponto
 
 Este é o frontend do sistema de ponto desenvolvido para o processo seletivo da Ilumeo. Interface moderna, responsiva e fiel ao protótipo no Figma.
 
-## 🚀 Tecnologias e Ferramentas
+ Tecnologias e Ferramentas
 
 - TypeScript
 - Next.js 15 (App Router)
@@ -10,30 +10,12 @@ Este é o frontend do sistema de ponto desenvolvido para o processo seletivo da 
 - ESLint + Prettier
 - Vitest + React Testing Library
 
-## 🎨 Layout
-
-Layout inspirado e reproduzido com fidelidade ao protótipo Figma fornecido pela Ilumeo.
-
-## 📁 Estrutura do Projeto
-
-📦 ponto-frontend
-├── src/
-│ ├── app/
-│ │ ├── dashboard/
-│ │ └── page.tsx
-│ ├── lib/
-│ └── styles/
-├── tests/
-│ └── login.test.tsx
-├── tailwind.config.js
-├── postcss.config.js
-└── vitest.config.ts
 
 bash
 Copiar
 Editar
 
-## 🔧 Como rodar localmente
+ Como rodar localmente
 
 ```bash
 # Clone o repositório
